@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kids | Step Style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .product-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: auto;
+      }
+      .section-title {
+        font-weight: bold;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        border-left: 5px solid #ff9900;
+        padding-left: 15px;
+        font-size: 1.6rem;
+      }
+
+      body {
+        background-image: url("kids back wallpaper.jpg") !important;
+        background-size: cover;
+      }
+
+      footer {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Step Style</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <form class="d-flex me-3 search-bar">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search products..."
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  2
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <h2 class="text-center mb-5">Explore Our Kids Collection</h2>
+
+      <!-- Clothing Section -->
+      <h3 class="mb-3">Clothing</h3>
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mb-5"
+      >
+        <div class="col">
+          <div class="card product-card h-100">
+            <img src="Thrasher-hoodie.webp" class="card-img-top" alt="Hoodie" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Hoodie</h5>
+              <p class="card-text">$24.99</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <img
+              src="kids graphic tees.jpeg"
+              class="card-img-top"
+              alt="Graphic Tee"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Graphic Tee</h5>
+              <p class="card-text">$15.99</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <img
+              src="denim shorts.jpeg"
+              class="card-img-top"
+              alt="Denim Shorts"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Denim Shorts</h5>
+              <p class="card-text">$18.49</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <img
+              src="kids tracksuit.jpg"
+              class="card-img-top"
+              alt="Tracksuit"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Tracksuit</h5>
+              <p class="card-text">$34.00</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footwear Section -->
+      <h3 class="mb-3">Footwear</h3>
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mb-5"
+      >
+        <div class="col">
+          <div class="card product-card h-100">
+            <img src="jordan5.webp" class="card-img-top" alt="Sneakers" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Sneakers</h5>
+              <p class="card-text">$29.99</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <img
+              src="kids rainboots.jpeg"
+              class="card-img-top"
+              alt="Rain Boots"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Rain Boots</h5>
+              <p class="card-text">$22.99</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <img
+              src="kids flip flops.jpg"
+              class="card-img-top"
+              alt="Flip-Flops"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Flip-Flops</h5>
+              <p class="card-text">$12.00</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <img
+              src="grass hopper-shoes.jpg"
+              class="card-img-top"
+              alt="School Shoes"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">School Shoes</h5>
+              <p class="card-text">$31.49</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accessories Section -->
+      <h3 class="mb-3">Accessories</h3>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card product-card h-100">
+            <img src="backpack.jpeg" class="card-img-top" alt="Backpack" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Backpack</h5>
+              <p class="card-text">$27.89</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <img src="sun hat.jpg" class="card-img-top" alt="Sun Hat" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Sun Hat</h5>
+              <p class="card-text">$14.95</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <img
+              src="cartoon socks.jpeg"
+              class="card-img-top"
+              alt="Cartoon Socks"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Cartoon Socks</h5>
+              <p class="card-text">$8.50</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <img src="kids beanie.jpg" class="card-img-top" alt="Beanie" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Beanie</h5>
+              <p class="card-text">$9.75</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+      <!-- Container only for inner content, not the whole footer -->
+      <div class="container">
+        <div class="row text-md-left">
+          <div class="col-md-3">
+            <h5 class="text-uppercase fw-bold">Step Style</h5>
+            <p>
+              Your one-stop shop for the freshest fashion. Stay fresh, stay
+              stylish.
+            </p>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase fw-bold">Shop</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="men.html" class="text-white text-decoration-none"
+                  >Men</a
+                >
+              </li>
+              <li>
+                <a href="women.html" class="text-white text-decoration-none"
+                  >Women</a
+                >
+              </li>
+              <li>
+                <a href="kids.html" class="text-white text-decoration-none"
+                  >Kids</a
+                >
+              </li>
+              <li>
+                <a
+                  href="new-arrivals.html"
+                  class="text-white text-decoration-none"
+                  >New Arrivals</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-uppercase fw-bold">Support</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="help-center.html"
+                  class="text-white text-decoration-none"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a href="returns.html" class="text-white text-decoration-none"
+                  >Returns</a
+                >
+              </li>
+              <li>
+                <a href="orders.html" class="text-white text-decoration-none"
+                  >Orders</a
+                >
+              </li>
+              <li>
+                <a
+                  href="create-account.html"
+                  class="text-white text-decoration-none"
+                  >Your Account</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="text-uppercase fw-bold">Stay in Touch</h6>
+            <form class="d-flex mb-3">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Email address"
+              />
+              <button class="btn btn-primary" type="submit">Join</button>
+            </form>
+            <div>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full-width copyright bar -->
+      <div
+        class="text-center p-3 mt-4"
+        style="background-color: rgba(255, 255, 255, 0.05)"
+      >
+        © 2025 Step Style. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

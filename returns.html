@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Returns & Exchanges | Step Style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Step Style</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <form class="d-flex me-3 search-bar">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search products..."
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  2
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <div class="container text-center my-5">
+      <h1 class="mb-3">Returns & Exchanges</h1>
+      <p class="lead">
+        Not happy with your purchase? No worries. Here’s how to return or
+        exchange your item.
+      </p>
+    </div>
+
+    <!-- Return Policy Section -->
+    <div class="container mb-5">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+          <div class="card p-4 shadow-sm">
+            <h4 class="mb-3">Our Return Policy</h4>
+            <ul>
+              <li>
+                You can return most items within <strong>30 days</strong> of
+                delivery.
+              </li>
+              <li>
+                Items must be unworn, unwashed, and in original packaging.
+              </li>
+              <li>
+                Sale items are final and not eligible for returns or exchanges.
+              </li>
+              <li>
+                Refunds are processed within 5–7 business days after we receive
+                your return.
+              </li>
+              <li>
+                Return shipping may apply depending on location and reason.
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-outline-primary mt-3"
+              >Need Help? Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="container mb-5">
+      <h3 class="text-center mb-4">Frequently Asked Questions</h3>
+      <div class="accordion" id="returnsFAQ">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq1">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse1"
+            >
+              How do I start a return?
+            </button>
+          </h2>
+          <div
+            id="collapse1"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#returnsFAQ"
+          >
+            <div class="accordion-body">
+              Visit the <a href="help-center.html">Help Center</a> and fill out
+              the contact form with your order number and return reason.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq2">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse2"
+            >
+              Can I exchange an item for a different size or color?
+            </button>
+          </h2>
+          <div
+            id="collapse2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#returnsFAQ"
+          >
+            <div class="accordion-body">
+              Yes! If the item is in stock, we’re happy to exchange it. Contact
+              support and specify the desired item.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq3">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse3"
+            >
+              How long does it take to get my refund?
+            </button>
+          </h2>
+          <div
+            id="collapse3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#returnsFAQ"
+          >
+            <div class="accordion-body">
+              Refunds are issued within 5–7 business days after we receive your
+              item and inspect it.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <!-- About -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+              <h5 class="text-uppercase fw-bold">Step Style</h5>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #007bff; height: 2px"
+              />
+              <p>
+                Your one-stop shop for the freshest kicks and fashion
+                essentials. Stay fresh, stay stylish.
+              </p>
+            </div>
+
+            <!-- Shop Links -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Shop</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="men.html" class="text-white text-decoration-none"
+                    >Men</a
+                  >
+                </li>
+                <li>
+                  <a href="women.html" class="text-white text-decoration-none"
+                    >Women</a
+                  >
+                </li>
+                <li>
+                  <a href="kids.html" class="text-white text-decoration-none"
+                    >Kids</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="new-arrivals.html"
+                    class="text-white text-decoration-none"
+                    >New Arrivals</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Support Links -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Support</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="create-account.html"
+                    class="text-white text-decoration-none"
+                    >Your Account</a
+                  >
+                </li>
+                <li>
+                  <a href="orders.html" class="text-white text-decoration-none"
+                    >Orders</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="help-center.html"
+                    class="text-white text-decoration-none"
+                    >Help Center</a
+                  >
+                </li>
+                <li>
+                  <a href="returns.html" class="text-white text-decoration-none"
+                    >Returns</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Newsletter + Social -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold">Stay in Touch</h6>
+              <p>Sign up for the latest drops and deals:</p>
+              <form class="d-flex mb-3">
+                <input
+                  type="email"
+                  class="form-control me-2"
+                  placeholder="Email address"
+                />
+                <button class="btn btn-primary" type="submit">Join</button>
+              </form>
+              <div>
+                <a href="#" class="text-white me-3"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="text-white me-3"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="text-white me-3"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="text-white"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div
+          class="text-center p-3 mt-4"
+          style="background-color: rgba(255, 255, 255, 0.05)"
+        >
+          © 2025
+          <a href="index.html" class="text-white fw-bold text-decoration-none"
+            >Step Style</a
+          >. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

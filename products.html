@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Products | Step Style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="products.css" />
+    <style>
+      .product-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: auto;
+        object-position: center;
+      }
+      .card-title {
+        font-size: 1.1rem;
+      }
+      .section-title {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        border-bottom: 2px solid #007bff;
+        display: inline-block;
+        padding-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">Step Style</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <form class="d-flex me-3 search-bar">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search products..."
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="cart.html">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  2
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <h1>All Products</h1>
+      <p>Here you'll see all our sneakers, clothes, and accessories.</p>
+    </div>
+    <!-- Kids Products -->
+    <div class="container py-5">
+      <h2 class="mb-4">Kids Products</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <!-- Kids Cards -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="kids jacket.jpg" class="card-img-top" alt="Kids Jacket" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Kids Jacket</h5>
+              <p class="card-text">$34.99</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="kids graphic tees.jpeg"
+              class="card-img-top"
+              alt="Cartoon T-Shirt"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Cartoon T-Shirt</h5>
+              <p class="card-text">$14.99</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="kids sandals.jpeg"
+              class="card-img-top"
+              alt="Kids Sandals"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Kids Sandals</h5>
+              <p class="card-text">$22.99</p>
+              <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="my-5">Women Products</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <!-- Women Cards -->
+        <div class="col">
+          <div class="card h-100">
+            <img src=" blouse.jpg" class="card-img-top" alt="Silk Blouse" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Silk Blouse</h5>
+              <p class="card-text">$39.99</p>
+              <a href="#" class="btn btn-danger mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="LV handbag.jpeg"
+              class="card-img-top"
+              alt="Women's Handbag"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Handbag</h5>
+              <p class="card-text">$59.99</p>
+              <a href="#" class="btn btn-danger mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="sports leggings.jpeg"
+              class="card-img-top"
+              alt="Sports Leggings"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Sports Leggings</h5>
+              <p class="card-text">$29.99</p>
+              <a href="#" class="btn btn-danger mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="my-5">Men Products</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <!-- Men Cards -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="polo shirt.jpeg" class="card-img-top" alt="Polo Shirt" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Polo Shirt</h5>
+              <p class="card-text">$24.99</p>
+              <a href="#" class="btn btn-success mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="leather shoes.jpg"
+              class="card-img-top"
+              alt="Leather Shoes"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Leather Shoes</h5>
+              <p class="card-text">$89.99</p>
+              <a href="#" class="btn btn-success mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="rolex-watch2.png"
+              class="card-img-top"
+              alt="Men's Watch"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Men's Watch</h5>
+              <p class="card-text">$129.99</p>
+              <a href="#" class="btn btn-success mt-auto">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modern Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+      <div class="container">
+        <div class="row text-md-left">
+          <div class="col-md-3">
+            <h5 class="text-uppercase fw-bold">Step Style</h5>
+            <p>
+              Your one-stop shop for the freshest fashion. Stay fresh, stay
+              stylish.
+            </p>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase fw-bold">Shop</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="men.html" class="text-white text-decoration-none"
+                  >Men</a
+                >
+              </li>
+              <li>
+                <a href="women.html" class="text-white text-decoration-none"
+                  >Women</a
+                >
+              </li>
+              <li>
+                <a href="kids.html" class="text-white text-decoration-none"
+                  >Kids</a
+                >
+              </li>
+              <li>
+                <a
+                  href="new-arrivals.html"
+                  class="text-white text-decoration-none"
+                  >New Arrivals</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-uppercase fw-bold">Support</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="help-center.html"
+                  class="text-white text-decoration-none"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a href="returns.html" class="text-white text-decoration-none"
+                  >Returns</a
+                >
+              </li>
+              <li>
+                <a href="orders.html" class="text-white text-decoration-none"
+                  >Orders</a
+                >
+              </li>
+              <li>
+                <a
+                  href="create-account.html"
+                  class="text-white text-decoration-none"
+                  >Your Account</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="text-uppercase fw-bold">Stay in Touch</h6>
+            <form class="d-flex mb-3">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Email address"
+              />
+              <button class="btn btn-primary" type="submit">Join</button>
+            </form>
+            <div>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center p-3 mt-4"
+        style="background-color: rgba(255, 255, 255, 0.05)"
+      >
+        © 2025 Step Style. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
